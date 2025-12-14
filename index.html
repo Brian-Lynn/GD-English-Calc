@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>广东高考英语计算器 | 0xbean</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Heiti SC", system-ui, -apple-system, sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            margin: 0;
+            line-height: 1.5;
+            -webkit-tap-highlight-color: transparent;
+            /* Mobile: Fixed height for split screen */
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        /* Desktop: Auto height for normal scrolling */
+        @media (min-width: 1024px) {
+            body {
+                height: auto;
+                overflow-y: auto;
+            }
+        }
+
+        .font-mono {
+            font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+        }
+        .font-serif {
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Hide scrollbar for cleaner mobile look while preserving functionality */
+        .no-scrollbar::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "recharts": "https://esm.sh/recharts@^3.5.1"
+  }
+}
+</script>
+</head>
+<body class="text-slate-800 h-full lg:h-auto lg:min-h-screen">
+    <div id="root" class="h-full lg:h-auto"></div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "GD English Calc",
+  "description": "A specialized calculator for Guangdong College Entrance Examination (Gaokao) English scores, featuring automatic weighted conversions and score visualization.",
+  "requestFramePermissions": []
+}
